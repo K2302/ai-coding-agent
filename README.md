@@ -129,7 +129,7 @@ Full pipeline: BM25 + Vector + Symbol + Graph expansion + Boosting + Explainabil
 
 Optimizations applied to `build_index.py` (see [`improvement.md`](improvement.md) for details):
 
-#### altrecruitrpservice (558 files)
+#### reop1 (558 files)
 
 | Step | Time |
 |---|---|
@@ -138,7 +138,7 @@ Optimizations applied to `build_index.py` (see [`improvement.md`](improvement.md
 | Others | < 0.11s |
 | **TOTAL** | **32.98s** |
 
-#### altcommon (8,921 files, 228k methods)
+#### repo2 (8,921 files, 228k methods)
 
 | Version | `parse_java` | Total | Speedup |
 |---|---|---|---|

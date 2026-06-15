@@ -1,0 +1,10 @@
+[
+  {
+    "table": "Candidate",
+    "file": "CandidateDAO.java"
+  },
+  {
+    "table": "ApplicantStatus",
+    "file": "ApplicantDAO.java"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "source": "ApplicantService",
+    "target": "ApplicantDAO",
+    "type": "IMPORT"
+  },
+  {
+    "source": "CandidateController",
+    "target": "ApplicantService",
+    "type": "IMPORT"
+  }
+]

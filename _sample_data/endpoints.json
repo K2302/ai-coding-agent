@@ -1,0 +1,12 @@
+[
+  {
+    "endpoint": "/candidate/{id}",
+    "method": "GET",
+    "controller": "CandidateController"
+  },
+  {
+    "endpoint": "/applicant/status",
+    "method": "POST",
+    "controller": "ApplicantController"
+  }
+]

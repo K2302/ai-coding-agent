@@ -1,0 +1,17 @@
+[
+  {
+    "method": "updateStatus",
+    "class": "ApplicantService",
+    "file": "ApplicantService.java"
+  },
+  {
+    "method": "findById",
+    "class": "ApplicantDAO",
+    "file": "ApplicantDAO.java"
+  },
+  {
+    "method": "getCandidate",
+    "class": "CandidateController",
+    "file": "CandidateController.java"
+  }
+]

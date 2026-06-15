@@ -1,0 +1,17 @@
+[
+  {
+    "class_name": "ApplicantService",
+    "package": "com.company.service",
+    "file": "ApplicantService.java"
+  },
+  {
+    "class_name": "CandidateController",
+    "package": "com.company.controller",
+    "file": "CandidateController.java"
+  },
+  {
+    "class_name": "ApplicantDAO",
+    "package": "com.company.dao",
+    "file": "ApplicantDAO.java"
+  }
+]

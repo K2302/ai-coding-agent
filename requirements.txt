@@ -1,0 +1,7 @@
+
+javalang
+networkx
+whoosh
+sentence-transformers
+faiss-cpu
+numpy

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta NAME="keywords" content="女尊世界守男德，她们却想攻略我,第七十四章：梦境">
+<meta NAME="description">
+<title>女尊世界守男德，她们却想攻略我 - 第七十四章：梦境 - 小说全文阅读 - SF轻小说</title>
+<link href="//rs.sfacg.com/web/m/css/v2/book-1.0.14.css" rel="stylesheet" type="text/css">
+<link href="//rs.sfacg.com/web/m/css/v2/font-1.0.06.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="//rs.sfacg.com/web/m/js/v1/jquery.min.js"></script>
+</head>
+<body>
+<!--头部-->
+<a name="top"></a>
+
+<ul class="menu_top_list book_view_top">
+<li><a href="/b/769572/">返回</a></li><li>第七十四章：梦境</li><li></li></ul>
+<div class="yuedu Content_Frame" style="margin-top:0.4rem;">
+<div >
+请支持作者的辛勤写作,VIP章节必须登录购买后才可阅读,<a href="/Login">点击登录</a>
+</div>
+<div class="yuedu_menu"><a href="/c/9660400">上一章</a><a href="/i/769572/">目录</a><a href="/c/9660580">下一章</a></div>
+</div>
+<div class="Tips" style="display:none;" id="Loading">
+<div class="Tipscontent">
+<div id="loaderImage" style="margin: 0 auto 0.075rem auto;background-size: 180px;"></div>
+<span>载入中……</span>
+</div>
+</div>
+<div class="Tips" style="display:none;" id="Tips">
+<div class="Tipscontent">
+<span>载入中……</span>
+</div>
+</div>
+<ul class="tck" style="display:none" id="TicketBouns" >
+<li>获得月票</li>
+<li>
+<div style="line-height:1.6em;">
+<span style="color:#FF0;">恭喜你获得领取月票一张的资格！</span><br>作为轻小说爱好者的你，希望你能善用这张月票来投给自己喜欢的作品。<div class="tck_yp">领取月票</div>
+</div>
+</li>
+<li>取 消</li>
+</ul>
+<script type="text/javascript" src="//rs.sfacg.com/web/m/js/v1/consume-1.0.02.js"></script>
+<style>
+.yuedu img { width: 100%; }
+</style>
+<script type="text/javascript">
+    $(function () {
+        //统计
+        setTimeout(
+            function () {
+                $.ajax({
+                    type: 'post',
+                    url: '/API/Book.ashx?op=addviewrecord',
+                    data: { bookid: 769572, articleid: 9660323 },
+                    dataType: 'json',
+                    cache: false,
+                    global: false,
+                    success: function (json) {
+                        if (json.status == 200) {
+                            $.ajax({
+                                type: 'post',
+                                url: '/ajax/ashx/Counter.ashx',
+                                data: { id: 9660323 },
+                                dataType: 'text',
+                                cache: false,
+                                global: false,
+                                success: function (info) {
+                                    HandleTicketBouns(info);
+                                },
+                                error: function (result, status) {
+                                }
+                            })
+                        }
+                    },
+                    error: function (result, status) {
+                    }
+                });
+            }, 3000);
+        var tMutext = true;
+        function HandleTicketBouns(info) {
+            
+            if (info != "0") {
+                $("#TicketBouns").show();
+                $("#TicketBouns li").eq(2).click(function(){
+                    $("#TicketBouns").hide();
+                });
+
+                var infos = info.split('|');
+
+                $(".tck_yp").click(function () {
+                    if (tMutext) {
+                        tMutext = false;
+                        $("#TicketBouns").hide();
+                        $.ajax({
+                            type: 'post',
+                            url: '/ajax/ashx/GetTicketBouns.ashx',
+                            data: { ts: infos[1], key: infos[2] },
+                            dataType: 'text',
+                            cache: false,
+                            global: false,
+                            success: function (info) {
+                                if (info == "1")
+                                    ShowMessage("恭喜您成功获得一张月票!");
+                                else if (info == "2")
+                                    ShowMessage("很遗憾,您未在2分钟内领取月票,本次月票领取机会已过期.");
+                                else if (info == "3")
+                                    ShowMessage("参数校验出错.");
+                                else if (info == "4")
+                                    ShowMessage("只有登录用户可以获取月票.");
+                                else ShowMessage("发生了未知的错误.");
+                                tMutext = true;
+                            },
+                            error: function (result, status) {
+                                ShowMessage("网络通信过程出现异常.");
+                                tMutext = true;
+                            }
+                        });
+                    }
+                });
+            }
+        }
+        $("#orderSingle").click(function () {
+            var autoOrder = 0;
+            if($("#autoOrder").attr("checked"))
+                autoOrder = 1;
+            consume.orderChapter(9660323,autoOrder, function(){location.href=location.href;}, function(msg){ShowMessage(msg)});
+        })
+        $("#orderAll").click(function () {
+            var autoOrder = 0;
+            if($("#autoOrder").attr("checked"))
+                autoOrder = 1;
+            consume.orderAllChapter(769572,autoOrder, function(){location.href=location.href;}, function(msg){ShowMessage(msg)});
+        });
+        $("#LinkPay").click(function(){
+            location.href = "/pay/";
+        });
+        $('#Loading').ajaxStart(function () {
+            ImageLoading("loaderImage");//图片loading效果
+            $(this).show();
+        }).ajaxStop(function () {
+            //CloseMessage();
+            ImageLoadingStop();
+            $(this).hide();
+        });
+
+        if(browser.versions.weixin){
+            $("#weixinTips").show();
+        }
+    });
+    function ShowMessage(msginfo) {
+        $("#Tips span").html(msginfo);
+        $("#Tips").fadeIn();
+        setTimeout(CloseMessage, 2000);
+    }
+    function CloseMessage() {
+        $("#Tips").fadeOut();
+    }
+    $("body").contextmenu(function(){
+        return false;
+    });
+    $("body").on("selectstart",function(){
+        return false;
+    });
+    $("body").on("copy",function(){
+        return false;
+    });
+    $("body").on("cut",function(){
+        return false;
+    });
+</script>
+
+
+<div class="bottom_menu"><a href="http://book.sfacg.com/ajax/ashx/ReturnToPC.ashx">切换电脑版</a>　 <a href="#top">返回顶部↑</a></div>
+<div id="TJ" style="position:absolute; width:0; height:0; overflow: hidden;">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V6Z91VXPTB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-V6Z91VXPTB');
+    </script>
+</div>
+<div id="bottomNav" style="display:none"><i></i>
+<img src="//rs.sfacg.com/web/m/images/APP_icon.png" width="172" height="30" border="0"><img src="//rs.sfacg.com/web/m/images/APP_D.png" width="65px" height="24px" border="0"><img src="//rs.sfacg.com/web/m/images/APP_Close.png" width="11.5px" height="11.5px"></div>
+<script type="text/javascript" src="//rs.sfacg.com/web/m/js/v1/libs-1.0.2.js"></script>
+<script type="text/javascript">
+    $(function () {
+        if ((browser.versions.weixin || browser.versions.qq) && getCookie("appNav") == "") {
+            $("#bottomNav").show();
+            $("#bottomNav img").eq(0).click(function () {
+                location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.sfacg";
+            });
+            $("#bottomNav img").eq(1).click(function () {
+                location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.sfacg";
+            });
+        }
+        else {
+            if (browser.versions.iPhone && getCookie("appNav") == "") {
+                $("#bottomNav").show();
+                $("#bottomNav img").eq(0).click(function () {
+                    location.href = "https://itunes.apple.com/cn/app/bo-luo-bao-qing-xiao-shuo/id928785539";
+                });
+                $("#bottomNav img").eq(1).click(function () {
+                    location.href = "https://itunes.apple.com/cn/app/bo-luo-bao-qing-xiao-shuo/id928785539";
+                });
+            }
+            if (browser.versions.android && getCookie("appNav") == "") {
+                $("#bottomNav").show();
+                $("#bottomNav img").eq(0).click(function () {
+                    location.href = "https://rs2.sfacg.com/app/down/android/h5/boluobao.apk";
+                });
+                $("#bottomNav img").eq(1).click(function () {
+                    location.href = "https://rs2.sfacg.com/app/down/android/h5/boluobao.apk";
+                });
+            }
+        }
+        $("#bottomNav img").eq(2).click(function () {
+            $("#bottomNav").hide();
+            addCookie("appNav", false, 6);
+        });
+    })
+</script>
+</body>
+</html>

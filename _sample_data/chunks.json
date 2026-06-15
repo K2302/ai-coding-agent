@@ -1,0 +1,33 @@
+[
+  {
+    "chunk_id": "ApplicantService.updateStatus",
+    "file": "ApplicantService.java",
+    "class_name": "ApplicantService",
+    "method": "updateStatus",
+    "signature": "void updateStatus(...)",
+    "content": "File: ApplicantService.java\nClass: ApplicantService\nMethod: updateStatus\nReturns: void",
+    "dependencies": [
+      "ApplicantDAO"
+    ]
+  },
+  {
+    "chunk_id": "ApplicantDAO.findById",
+    "file": "ApplicantDAO.java",
+    "class_name": "ApplicantDAO",
+    "method": "findById",
+    "signature": "void findById(...)",
+    "content": "File: ApplicantDAO.java\nClass: ApplicantDAO\nMethod: findById\nReturns: void",
+    "dependencies": []
+  },
+  {
+    "chunk_id": "CandidateController.getCandidate",
+    "file": "CandidateController.java",
+    "class_name": "CandidateController",
+    "method": "getCandidate",
+    "signature": "void getCandidate(...)",
+    "content": "File: CandidateController.java\nClass: CandidateController\nMethod: getCandidate\nReturns: void",
+    "dependencies": [
+      "ApplicantService"
+    ]
+  }
+]

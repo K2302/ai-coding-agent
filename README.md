@@ -1,5 +1,5 @@
 
-# Senior SDE Code Retrieval MVP
+# Code Retrieval MVP
 
 Multi-stage code intelligence pipeline for Java repositories — from raw AST parsing to fused retrieval with graph expansion.
 
